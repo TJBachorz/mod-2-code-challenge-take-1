@@ -15,6 +15,6 @@ class HeroinesController < ApplicationController
             supername: params[:supername],
             power_id: params[:power_id],
         )
-        redirect_to "http://localhost:3003"
+        redirect_to "http://localhost:3001"
     end
 end
