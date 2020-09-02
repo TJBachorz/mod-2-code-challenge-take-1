@@ -6,6 +6,6 @@ class PowersController < ApplicationController
 
     def show
         @power = Power.find(params[:id])
-        render json: @power
+        render json: @power, include: :heroines
     end
 end
