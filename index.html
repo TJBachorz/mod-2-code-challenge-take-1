@@ -9,21 +9,21 @@
 <body>
     <main>
         <h5><a href="/">Home</a</h5>
-        <h5><a href="/power/powers.html">Powers</a</h5>
+        <h5><a href="/power/powers.html">Powers</a></h5>
         
         <h1>Superwomen!!</h1>
         <h2>Select a woman find out her secret superhero identity!</h2>
 
     </main>
     
-    <form>
+    <form method="POST" action="http://localhost:3000/heroines">
         <label for="name-field">Name:</label>
         <input id="name-field" type="text" name="name" placeholder="Name">
         <label for="supername-field">Supername:</label>
-        <input id="supername-field" type="text" name="Supername" placeholder="Supername">
-        <input type="submit" value="Add Superheroine">
-        <select id="power-selection">
+        <input id="supername-field" type="text" name="supername" placeholder="Supername">
+        <select id="power-selection" name="power_id">
         </select>
+        <input type="submit" value="Add Heroine">
     </form>
 
     

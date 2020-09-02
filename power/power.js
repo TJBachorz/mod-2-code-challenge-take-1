@@ -18,10 +18,11 @@ function showHolders(power) {
     const namesHeader = document.createElement('h3')
     namesHeader.textContent = "Holders of this power:"
     body.appendChild(namesHeader)
-    console.log(power.heroines)
-    // heroines.map(heroine => {
-    //     const name = document.createElement('p')
-    //     name.innerHTML = `<a href="heroine.html?heroine_id=${heroine.id}>${heroine.name}</a>`
-    //     body.appendChild(name)
-    // })
+    const heroines = power.heroines
+    console.log(heroines)
+    heroines.map(heroine => {
+        const name = document.createElement('p')
+        name.innerHTML = `<a href="http://localhost:3003/heroine/heroine.html?heroine_id=${heroine.id}">${heroine.name}</a>`
+        body.appendChild(name)
+    })
 }

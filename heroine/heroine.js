@@ -30,6 +30,6 @@ function getHeroineSupername(heroine, section) {
 
 function getHeroinePower(heroine, section) {
     const power = document.createElement('p')
-    power.innerHTML = `Power: <a href="http://localhost:3001/power/power.html?power_id=${heroine.power.id}"">${heroine.power.name}</a>`
+    power.innerHTML = `Power: <a href="http://localhost:3003/power/power.html?power_id=${heroine.power.id}"">${heroine.power.name}</a>`
     section.appendChild(power)
 }
